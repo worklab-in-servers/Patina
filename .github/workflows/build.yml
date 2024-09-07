@@ -1,15 +1,7 @@
 name: Build
 
 on:
-  push:
-    paths-ignore:
-      - '*.md'
-      - 'Jenkinsfile'
-  pull_request:
-    paths-ignore:
-      - '*.md'
-      - 'Jenkinsfile'
-        
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-20.04
